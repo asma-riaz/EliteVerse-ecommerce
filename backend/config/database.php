@@ -1,10 +1,10 @@
 <?php
 // backend/config/database.php
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'eliteverse_db');
+$host = getenv('DB_HOST') ?: 'localhost';
+$db   = getenv('DB_NAME') ?: 'eliteverse_db';
+$user = getenv('DB_USER') ?: 'root';
+$pass = getenv('DB_PASS') ?: '';
 define('JWT_SECRET', '$2y$10$vnFXhPyniOcuzAd6hIDOdeGoBlECQ5QMQRIK9m1jsiIxLsFaG5Kgu');
 
 function getDB() {

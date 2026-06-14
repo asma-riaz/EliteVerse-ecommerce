@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:80"
+    environment:
+      DB_HOST: database
+      DB_NAME: eliteverse_db
+      DB_USER: root
+      DB_PASS: root
+    depends_on:
+      - database
+
+  database:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: eliteverse_db
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql
+
+volumes:
+  mysql_data:
