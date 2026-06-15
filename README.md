@@ -2,7 +2,7 @@ Elite Verse E-Commerce Platform
 A full-stack ecommerce application featuring product management, shopping cart functionality, category filtering, and an admin dashboard built using React, PHP, MySQL, and Tailwind CSS.
 
 ## 📁 Complete File Structure
-
+```
 ecommerce/
 │
 ├── 📄 database.sql                    ← Import into phpMyAdmin first
@@ -85,7 +85,7 @@ ecommerce/
                 ├── AdminProducts.jsx  ← CRUD product management
                 ├── AdminOrders.jsx    ← View & update all orders
                 └── AdminCustomers.jsx ← View customers
-
+```
 ---
 
 ## Setup in 3 Steps
