@@ -1,11 +1,8 @@
-# 🛒 ShopWave — E-Commerce Platform
-> React + PHP + MySQL | University Project
-
----
+Elite Verse E-Commerce Platform
+A full-stack ecommerce application featuring product management, shopping cart functionality, category filtering, and an admin dashboard built using React, PHP, MySQL, and Tailwind CSS.
 
 ## 📁 Complete File Structure
 
-```
 ecommerce/
 │
 ├── 📄 database.sql                    ← Import into phpMyAdmin first
@@ -88,15 +85,14 @@ ecommerce/
                 ├── AdminProducts.jsx  ← CRUD product management
                 ├── AdminOrders.jsx    ← View & update all orders
                 └── AdminCustomers.jsx ← View customers
-```
 
 ---
 
-## ⚙️ Setup in 3 Steps
+## Setup in 3 Steps
 
 ### Step 1 — Database
-1. Open **phpMyAdmin** (via XAMPP → http://localhost/phpmyadmin)
-2. Create database: `shopwave_db`
+1. Open **phpMyAdmin** (via XAMPP → http:8080//localhost/phpmyadmin)
+2. Create database: `eliteverse_db`
 3. Click **Import** → select `database.sql` → Click **Go** ✅
 
 ### Step 2 — Backend
@@ -110,22 +106,13 @@ cd ecommerce/frontend
 npm install
 npm run dev
 ```
-Open → **http://localhost:5173** 🎉
+Open **http://localhost:5173** 
 
 ---
 
-## 🔐 Demo Credentials
+##  Features
 
-| Role     | Email                  | Password  |
-|----------|------------------------|-----------|
-| Admin    | admin@shopwave.com     | admin123  |
-| Customer | ali@gmail.com          | user123   |
-
----
-
-## ✨ Features
-
-### 🛍️ Customer
+### Customer
 - Browse products with search, filter by category, sort by price
 - Product detail page with image, reviews, related products
 - Add to cart with quantity control
@@ -135,7 +122,7 @@ Open → **http://localhost:5173** 🎉
 - User profile management
 - Star rating & review system
 
-### 👨‍💼 Admin
+###  Admin
 - Dashboard: revenue charts, order stats, top products
 - Full product CRUD (add/edit/delete with modal)
 - Order management with status updates
@@ -143,7 +130,7 @@ Open → **http://localhost:5173** 🎉
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer     | Technology                        |
 |-----------|-----------------------------------|
@@ -160,7 +147,7 @@ Open → **http://localhost:5173** 🎉
 
 ---
 
-## 📡 API Endpoints
+##  Endpoints
 
 | Method | Endpoint                        | Auth    | Description               |
 |--------|---------------------------------|---------|---------------------------|
@@ -181,3 +168,8 @@ Open → **http://localhost:5173** 🎉
 | PUT    | /api/orders/index.php           | Admin   | Update order status       |
 | POST   | /api/orders/wishlist.php        | Customer| Add to wishlist           |
 | GET    | /api/admin/dashboard.php        | Admin   | Dashboard stats           |
+
+---
+
+## Author
+Asmu
